@@ -7,12 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodoModule } from './forms/todo/todo.module';
 import { AppRoutingModule } from './app-routing.module';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { todoReducer } from './forms/todo/store/todo.reducer';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({}, {}),
+    StoreModule.forRoot({ todoState: todoReducer }),
     BrowserAnimationsModule,
     TodoModule,
     AppRoutingModule,
