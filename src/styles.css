@@ -2,3 +2,20 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.green {
+  color: #037971 !important;
+}
+
+.pink {
+  color: #e31b6d !important;
+}
+
+.red {
+  color: #ec5453 !important;
+}
+
+.coffee {
+  color: #6f1a07 !important;
+}

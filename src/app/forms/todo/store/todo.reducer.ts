@@ -15,6 +15,10 @@ export const todoFeatureKey = 'todoState';
 
 export const todoReducer = createReducer(
   todoInitialState,
+  on(TodoActions.setTodos, (state, payload) => {
+    const todos = payload.todos;
+    return { ...state, todos };
+  }),
   on(TodoActions.saveOrUpdateTodo, (state, payload) => {
     const todos = payload.isUpdate
       ? state.todos.map((todo) =>
