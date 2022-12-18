@@ -5,3 +5,9 @@ mat-toolbar {
   button {
     margin-left: 10px;
   }
+
+  .button-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }

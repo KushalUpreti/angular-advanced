@@ -8,12 +8,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './components/header/header.module';
 import { EffectsModule } from '@ngrx/effects';
+import { reducers } from './app.reducer';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({}),
+    StoreModule.forRoot(reducers),
     BrowserAnimationsModule,
     AppRoutingModule,
     HeaderModule,
